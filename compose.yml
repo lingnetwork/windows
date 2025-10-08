@@ -3,7 +3,15 @@ services:
     image: dockurr/windows
     container_name: windows
     environment:
-      VERSION: "11"
+      VERSION: "11l"
+      DISK_SIZE: "32G"
+      RAM_SIZE: "8G"
+      CPU_CORES: "2"
+      USERNAME: "Lenovo"
+      PASSWORD: "130236Qa"
+      LANGUAGE: "Chinese"
+      REGION: "zh-CN"
+      KEYBOARD: "zh-CN"
     devices:
       - /dev/kvm
       - /dev/net/tun
